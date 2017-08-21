@@ -23,7 +23,7 @@ var storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
         //console.log(file.mimetype)
-        cb(null, file.originalname/* + '-' + Date.now() + '-' */+ getExtension(file));//define o nome da imagem
+        cb(null, file.originalname + getExtension(file));//define o nome da imagem
     }
 });
 
@@ -89,7 +89,7 @@ app.post('/uploads', function (req, res, next) {// para a requisicao POST, defin
                 }
                 function load(){//mostra o resultado da analise junto da imagem
                     res.writeHead(200,{'Content-Type':'text/html'});
-                    res.write("<h1>Uploaded from file</h2><img style='max-width:20%' src='" + prog.files.fileName[0].path + "'/><pre>" + /*JSON.stringify(*/fs.readFile(__dirname+'/uploads/teste.json', 'utf8', function(error, data){res.end(data);})/*, null, 2)*/ + "</pre><a href='/'>Go back</a>");
+                    res.write("<h1>Uploaded from file</h2><img style='max-width:20%' src='" + prog.files.fileName[0].path + "'/><pre>" + fs.readFile(__dirname+'/uploads/teste.json', 'utf8', function(error, data){res.end(data);}) + "</pre><a href='/'>Go back</a>");
                 }
                 conv(save);//chama funcao conv com argumento para callback a funcao save
               }
