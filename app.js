@@ -94,47 +94,6 @@ app.post('/uploads', function (req, res, next) {// para a requisicao POST, defin
                 conv(save);//chama funcao conv com argumento para callback a funcao save
               }
             });
-
-            //nao esta mais sendo usado
-            if (prog.files.fileName) { // fileName comes from input element:   <input type="file" name="fileName">
-                //console.log("passou");
-                //res.writeHead(200,{'Content-Type':'text/html'});
-                //var reqJSON = JSON.stringify(prog.files.fileName, null, 2); // pretty print the JSON for <pre> tag
-
-                //res.write("<h1>Uploaded from file</h2><img style='max-width:20%' src='" + prog.files.fileName[0].path + "'/><pre>" + reqJSON + "</pre><a href='/'>Go back</a>");
-                //res.end();
-                //console.log("req.files.fileName")
-                //console.log(req.files.fileName)
-            }
-            //nao esta mais sendo usado, tag removida do arguivo HTML
-            //metodo para analisar uma imagem por meio de uma url
-            else if (prog.body.imageUrl) {
-
-              // the text field was used, so process the input type=text with regular node/express
-                var download = function (uri, filename, callback) {//nao esta mais sendo usado
-                    request.head(uri, function (err, res, body) {//nao esta mais sendo usado
-                        console.log('content-type:', res.headers['content-type']);//nao esta mais sendo usado
-                        console.log('content-length:', res.headers['content-length']);//nao esta mais sendo usado
-                        request(uri).pipe(fs.createWriteStream('./uploads/' + filename)).on('close', callback);//nao esta mais sendo usado
-                    });
-                };
-
-                //nao esta mais sendo usado, tag removida do arguivo HTML
-                //so e usado quando for submetido uma url
-                var urlParsed = url.parse(prog.body.imageUrl);//nao esta mais sendo usado
-                if (urlParsed.pathname){//nao esta mais sendo usado
-                  var onlyTheFilename = urlParsed.pathname ? urlParsed.pathname.substring(urlParsed.pathname.lastIndexOf('/') + 1).replace(/((\?|#).*)?$/, '') : '';//nao esta mais sendo usado
-                  //console.log(urlParsed)//nao esta mais sendo usado
-                  var newFilename = onlyTheFilename/* + '-' + Date.now() + '-' */+ onlyTheFilename//nao esta mais sendo usado
-                  var wholePath = 'uploads/' + newFilename;//nao esta mais sendo usado
-                  download(urlParsed.href, newFilename, function () {//nao esta mais sendo usado
-                    var reqJSON = JSON.stringify(wholePath, null, 2); ////nao esta mais sendo usado
-                    res.end("<h1>Uploaded from URL</h2><img style='max-width:50%' src='" + wholePath + "'/><pre>" + reqJSON + "</pre><a href='/'>Go back</a>")//nao esta mais sendo usado
-                    console.log("wholePath")//nao esta mais sendo usado
-                    console.log(wholePath)//nao esta mais sendo usado
-                  });
-                }
-            }
         }
     });
 });
