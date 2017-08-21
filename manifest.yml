@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: jpppselecapp-tor-0817
+  host: jpppselecapp-tor-0817
+  disk_quota: 1024M

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu estagio minha vida</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./style/animate.css">
+	  <link rel="stylesheet" href="./style/style.css" />
+
+  </head>
+  <body>
+    <header></header>
+    <section id="container">
+      <div id="main">
+        <div id="video-background">
+	         <video muted="" data-widget="videolooper" loop="" autoplay="">
+	            <source src="./videos/geometric.mp4" type="video/mp4" />
+	         </video>
+	         <iframe id="clip" src="" frameborder="0" allowfullscreen="false" allowscriptaccess="always"></iframe>
+	      </div>
+
+        <div id="all">
+
+          <div>
+            <h1>Upload an image</h1>
+          </div>
+
+          <form action="/uploads" method="POST" enctype="multipart/form-data">
+            <div id="form">
+              <div>
+                <h2>Select an image to upload:</h2>
+              </div>
+              <div>
+                <input type="file" name="fileName">
+              </div>
+              <br/>
+              <div>
+                <input type="submit" value="Upload Image" id="sbutton">
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+    <footer>Joao Pedro Poloni Ponce 2017</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>

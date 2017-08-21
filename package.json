@@ -1,0 +1,27 @@
+{
+  "name": "imgclassic",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Joao Pedro Poloni Ponce",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "multer": "^1.1.0",
+    "progress-stream": "^1.2.0",
+    "request": "^2.72.0",
+    "url": "^0.11.0",
+    "watson-developer-cloud": "^2.38.0"
+  },
+  "repository": {},
+  "engines": {
+    "node": "6.x"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "description": ""
+}

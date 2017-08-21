@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size-adjust: none;
+    font-size: 100%;
+    font-style: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font: normal normal 100%;
+    color: #ffffff;
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 480px;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    min-height: 120px;
+    background: url(../imagens/indice.png) no-repeat #6995ed center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 5%;
+    min-height: 50px;
+    line-height: 50px;
+    text-indent: 80px;
+    background: url(../images/watson.png) no-repeat #008571;
+    background-size: 60px;
+    background-position: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+}
+
+footer img {
+    height: 80px;
+    vertical-align: middle;
+}
+
+#container {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+#video-background video {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#all{
+  text-align: left;
+}
+
+#sbutton{
+  color: #7f7f7f;
+}
