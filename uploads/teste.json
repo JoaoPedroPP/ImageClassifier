@@ -1,0 +1,57 @@
+{
+  "custom_classes": 0,
+  "images": [
+    {
+      "classifiers": [
+        {
+          "classes": [
+            {
+              "class": "angle of refraction",
+              "score": 0.709
+            },
+            {
+              "class": "obtuse triangle",
+              "score": 0.633,
+              "type_hierarchy": "/figure/polygon/triangle/obtuse triangle"
+            },
+            {
+              "class": "triangle",
+              "score": 0.855
+            },
+            {
+              "class": "polygon",
+              "score": 0.856
+            },
+            {
+              "class": "figure",
+              "score": 0.899
+            },
+            {
+              "class": "right triangle",
+              "score": 0.57,
+              "type_hierarchy": "/figure/polygon/triangle/right triangle"
+            },
+            {
+              "class": "hypotenuse",
+              "score": 0.549,
+              "type_hierarchy": "/figure/hypotenuse"
+            },
+            {
+              "class": "acute triangle",
+              "score": 0.5,
+              "type_hierarchy": "/figure/polygon/triangle/acute triangle"
+            },
+            {
+              "class": "blue color",
+              "score": 0.975
+            }
+          ],
+          "classifier_id": "default",
+          "name": "default"
+        }
+      ],
+      "image": "printapp.png.png"
+    }
+  ],
+  "images_processed": 1
+}
